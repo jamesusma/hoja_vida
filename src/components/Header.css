@@ -1,0 +1,41 @@
+/* Header.css */
+
+/* Estilos para la imagen de perfil */
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+  
+  /* Animación del título */
+  .titulo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    animation: moverTitulo 5s linear infinite;
+  }
+  
+  /* Animación del subtítulo */
+  .subtitulo {
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+    animation: moverSubtitulo 7s linear infinite;
+  }
+  
+  /* Animación para el movimiento del título */
+  @keyframes moverTitulo {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Animación para el movimiento del subtítulo */
+  @keyframes moverSubtitulo {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+  }
+  
